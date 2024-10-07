@@ -14,40 +14,47 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "weatherVue",
+  title: "WeatherVue",
   description:
     "WeatherVue🌦 is a modern, responsive weather application built with Next.js and React. It provides real-time weather information and forecasts for locations worldwide, with the added feature of automatic geolocation for a personalized experience.",
   keywords: ["geolocation", "WeatherApp", "WeatherApi"],
   authors: [{ name: "Maxwell999b" }],
   creator: "Maxwell999b",
-  publisher: "weatherVue",
+  publisher: "WeatherVue",
   metadataBase: new URL("https://weathervue-beta.vercel.app"),
   openGraph: {
     type: "website",
-    title: "WeatherVue",
+    locale: "en_US",
+    url: "https://weathervue-beta.vercel.app",
+    title: "WeatherVue - Real-time Weather App",
     description:
       "WeatherVue🌦 is a modern, responsive weather application built with Next.js and React. It provides real-time weather information and forecasts for locations worldwide, with the added feature of automatic geolocation for a personalized experience.",
     siteName: "WeatherVue",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "WeatherVue - Modern Weather Application",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "WeatherVue",
+    title: "WeatherVue - Real-time Weather App",
     description:
       "WeatherVue🌦 is a modern, responsive weather application built with Next.js and React. It provides real-time weather information and forecasts for locations worldwide.",
-    images: ["/og-image.jpg"],
+    images: ["/android-chrome-512x512.png"],
+    creator: "@Maxwell999b",
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/android-chrome-192x192.png", type: "image/png" }],
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", type: "image/png" },
+      { url: "/favicon-16x16.png", type: "image/png" },
+    ],
     apple: [{ url: "/apple-touch-icon.png", type: "image/png" }],
-    shortcut: ["/favicon-16x16.png"],
     other: [
       {
         rel: "mask-icon",
@@ -65,6 +72,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image" content="https://weathervue-beta.vercel.app/android-chrome-512x512.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
