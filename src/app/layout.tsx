@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "WeatherVue",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://weathervue-beta.vercel.app/android-chrome-512x512.png",
         width: 1200,
         height: 630,
         alt: "WeatherVue - Modern Weather Application",
