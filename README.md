@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WeatherVue
 
-## Getting Started
+WeatherVue is a modern, responsive weather application built with Next.js and React. It provides real-time weather information and forecasts for locations worldwide, with the added feature of automatic geolocation for a personalized experience.
 
-First, run the development server:
+## Features
 
-```bash
+- Current weather display
+- 5-day weather forecast
+- Geolocation support for automatic local weather
+- Search functionality for any city worldwide
+- Responsive design for desktop and mobile devices
+- Beautiful UI with a dark theme and weather-appropriate icons
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- OpenWeatherMap API
+- Geolocation API
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14 or later)
+- npm or yarn
+- An OpenWeatherMap API key
+
+## Installation
+
+1.  Clone the repository:
+
+    ```
+    git clone https://github.com/Maxwell999b/weathervue.git
+    cd weathervue
+    ```
+
+2.  Install the dependencies:
+
+    ```
+    npm install
+    ```
+
+    or if you use yarn:
+
+    ```
+    yarn install
+    ```
+
+3.  Create a `.env.local` file in the root directory and add your OpenWeatherMap API key:
+
+    ```
+    NEXT_PUBLIC_OPENWEATHERMAP_API_KEY=your_api_key_here
+    ```
+
+## Usage
+
+To run the development server:
+
+```
 npm run dev
-# or
+```
+
+or
+
+```
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+or
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+yarn build
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This app can be easily deployed on Vercel, the platform created by the makers of Next.js. For more information on deploying Next.js apps, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions to WeatherVue are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
+- Icons by [Lucide](https://lucide.dev/)
+- UI components by [shadcn/ui](https://ui.shadcn.com/)
+
+## Contact
+
+If you have any questions, feel free to reach out to me or open an issue on GitHub.
+
+Happy weather tracking!
